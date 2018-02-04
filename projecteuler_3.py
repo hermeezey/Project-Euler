@@ -36,8 +36,8 @@ import math
 def prime_verify(p):
     k=int(math.sqrt(p))
     divisors=0
-    for i in range(1,k+1):      
-        if p%i==0:              
+    for i in range(1,k+1):
+        if p%i==0:
             divisors=divisors+1
 
     if divisors > 1:
@@ -53,9 +53,9 @@ def main(n):
     p=2
     factors=[]
     while n > 1:
-        
+
         if prime_verify(p)==True:
-           
+
             if n%p==0:
                 factors.append(p)
                 n=n//p              # Note we do not tick up p here because
@@ -63,19 +63,15 @@ def main(n):
             else:                   # until all factors of p are gone.
                 p=p+1
         else:
-            p=p+1                   
-            
+            p=p+1
+
 
     print(factors)
-    
+
     return factors
+
+    input("Press <Enter> to quit")
 
 
 if __name__=='__main__':
     main(600851475143)
-        
-        
-
-        
-    
-    
