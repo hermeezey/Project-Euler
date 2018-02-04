@@ -13,9 +13,9 @@ def main():
     while x<1000:
         if x%3==0:
             mult3.append(x)
-           
+
         x=x+1
-        
+
     mult5=[]
     y=1
     while y<1000:
@@ -32,8 +32,9 @@ def main():
 
     print("The answer is {}".format(answer))
 
+    input("Press <Enter> to quit")
+
+
 
 if __name__=='__main__':
     main()
-        
-           
